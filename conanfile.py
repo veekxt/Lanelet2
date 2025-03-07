@@ -111,7 +111,7 @@ class Lanelet2Conan(ConanFile):
     virtualrunenv = True
 
     requires = (
-        "boost/1.81.0" if sys.version_info.minor > 9 else "boost/1.75.0",
+        "boost/1.87.0" if sys.version_info.minor > 9 else "boost/1.75.0",
         "eigen/3.4.0",
         "geographiclib/1.52",
         "pugixml/1.13",
