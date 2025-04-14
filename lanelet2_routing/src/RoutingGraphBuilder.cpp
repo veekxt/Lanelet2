@@ -153,7 +153,7 @@ void RoutingGraphBuilder::addEdges(const ConstLanelets& lanelets, const LaneletL
     addFollowingEdges(ll);
     addSidewayEdge(rightToLeft, ll, ll.leftBound(), RelationType::AdjacentLeft);
     addSidewayEdge(leftToRight, ll, ll.rightBound(), RelationType::AdjacentRight);
-    addConflictingEdge(ll, passableLanelets);
+    // addConflictingEdge(ll, passableLanelets);
   }
 
   // now process the lane changes
